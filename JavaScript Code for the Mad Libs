@@ -1,0 +1,16 @@
+onEvent("submitbtn", "click", function(){
+setScreen("gamescreen");
+var noun = getText("noun");
+var verb = getText("verb");
+var adjective = getText("adj");
+console.log(verb);
+console.log(noun);
+console.log(adjective);
+setText("text_area1", ("One day, a little " + noun.toUpperCase()) + " went to the park to " + verb.toUpperCase() + " sourounded by the " + adjective.toUpperCase() + " trees");
+});
+onEvent("playagainbtb", "click", function(){
+setScreen("screen1");
+setText("adj", "");
+setText("noun", "");
+setText("verb", "");
+});
